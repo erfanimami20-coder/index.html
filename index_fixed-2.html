@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>مهدیس؟</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ffd6e7,#d8c8ff);
+    font-family:tahoma;
+}
+
+.box{
+    width:90%;
+    max-width:420px;
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 40px #999;
+}
+
+h1{
+    font-size:28px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    margin:10px;
+    cursor:pointer;
+    background:#ff5c8a;
+    color:white;
+}
+
+img,svg{
+    width:220px;
+    height:220px;
+    margin:15px;
+}
+
+.hidden{
+    display:none;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="box">
+
+
+<div id="one">
+
+<h1>
+مهدیس بذرافشان؟ 🧐
+</h1>
+
+<button onclick="nextPage(1)">
+بله 😶‍🌫️
+</button>
+
+<button>
+خیر
+</button>
+
+</div>
+
+
+
+<div id="two" class="hidden">
+
+<h1>
+چرا انقدر خری؟ 🤨
+</h1>
+
+
+<!-- خر کارتونی -->
+
+<svg viewBox="0 0 200 200">
+
+<circle cx="100" cy="100" r="70" fill="#b88752"/>
+
+<ellipse cx="60" cy="35" rx="20" ry="45" fill="#8b5a2b"/>
+<ellipse cx="140" cy="35" rx="20" ry="45" fill="#8b5a2b"/>
+
+<circle cx="75" cy="95" r="8"/>
+<circle cx="125" cy="95" r="8"/>
+
+<ellipse cx="100" cy="140" rx="35" ry="20" fill="#ddd"/>
+
+<text x="100" y="150" text-anchor="middle" font-size="30">
+😐
+</text>
+
+</svg>
+
+
+<br>
+
+<button onclick="nextPage(2)">
+نمیدانم - اطلاعی ندارم
+</button>
+
+</div>
+
+
+
+
+
+<div id="three" class="hidden">
+
+<h1>
+چرا انقدر بیشعوری؟ 🤨
+</h1>
+
+
+<!-- تصویر کارتونی -->
+
+<svg viewBox="0 0 200 200">
+
+<circle cx="100" cy="100" r="70" fill="#f1d7b8"/>
+
+<circle cx="75" cy="90" r="8"/>
+<circle cx="125" cy="90" r="8"/>
+
+<path d="M70 140 Q100 160 130 140"
+stroke="black"
+stroke-width="5"
+fill="none"/>
+
+</svg>
+
+
+<br>
+
+<button onclick="nextPage(3)">
+ببخشید گوه خوردم
+</button>
+
+
+</div>
+
+
+
+
+
+<div id="four" class="hidden">
+
+<h1>
+عذرخواهی پذیرفته نمیشه 😐
+</h1>
+
+
+<!-- گل لیلیوم -->
+
+<svg viewBox="0 0 200 200">
+
+
+<line x1="100" y1="130" x2="100" y2="190"
+stroke="green"
+stroke-width="6"/>
+
+
+<ellipse cx="100" cy="80" rx="25" ry="60"
+fill="white"/>
+
+<ellipse cx="100" cy="80" rx="60" ry="25"
+fill="white"/>
+
+<ellipse cx="60" cy="80" rx="25" ry="60"
+fill="#eee"/>
+
+<ellipse cx="140" cy="80" rx="25" ry="60"
+fill="#eee"/>
+
+<circle cx="100" cy="80" r="15"
+fill="orange"/>
+
+
+</svg>
+
+
+<p>
+🌸 پایان ماجرا 🌸
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+function nextPage(page){
+
+document.getElementById("one").classList.add("hidden");
+document.getElementById("two").classList.add("hidden");
+document.getElementById("three").classList.add("hidden");
+document.getElementById("four").classList.add("hidden");
+
+
+if(page===1){
+document.getElementById("two").classList.remove("hidden");
+}
+
+if(page===2){
+document.getElementById("three").classList.remove("hidden");
+}
+
+if(page===3){
+document.getElementById("four").classList.remove("hidden");
+}
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
